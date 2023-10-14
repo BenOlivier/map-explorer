@@ -10,7 +10,7 @@
 	public class QuadTreeCameraMovement : MonoBehaviour
 	{
 		[SerializeField]
-		[Range(1, 100)]
+		[Range(1, 1000)]
 		public float _panSpeed = 1.0f;
 
 		[SerializeField]
