@@ -154,8 +154,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaskScale: 10
-  MaskLength: 1.25
-  MaskWidth: 2
+  MaskLength: 1
+  MaskWidth: 1.6
   MaskRadius: 0.2
   MaskRotation: 0
 --- !u!4 &472118564
@@ -215,9 +215,9 @@ MonoBehaviour:
           visibleBuffer: 0
           disposeBuffer: 0
         rangeAroundCenterOptions:
-          west: 2
+          west: 3
           north: 2
-          east: 2
+          east: 3
           south: 2
         rangeAroundTransformOptions:
           targetTransform: {fileID: 0}
@@ -228,7 +228,7 @@ MonoBehaviour:
       snapMapToZero: 0
     scalingOptions:
       scalingType: 1
-      unityTileSize: 2
+      unityTileSize: 0.25
     loadingTexture: {fileID: 2800000, guid: e2896a92727704803a9c422b043eae89, type: 3}
     tileMaterial: {fileID: 2100000, guid: 543975a14ab724f0a924b053f9d01326, type: 2}
   _initializeOnStart: 1
@@ -831,7 +831,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 80
   orthographic: 0
   orthographic size: 256
   m_Depth: -1
@@ -856,14 +856,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787361570}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalRotation: {x: 0.60876137, y: 0, z: 0, w: 0.7933534}
+  m_LocalPosition: {x: 0, y: 0.7, z: -0.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 75, y: 0, z: 0}
 --- !u!114 &1787361576
 MonoBehaviour:
   m_ObjectHideFlags: 0
