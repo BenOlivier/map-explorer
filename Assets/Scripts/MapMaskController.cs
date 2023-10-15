@@ -20,6 +20,8 @@ public class MapMaskController : MonoBehaviour
 
     public void SetValues()
     {
+        Shader.SetGlobalVector("_MaskPosition", transform.position);
+        Shader.SetGlobalFloat("_MaskRotation", transform.rotation.eulerAngles.y);
         Shader.SetGlobalFloat("_MaskScale", MaskScale);
         Shader.SetGlobalFloat("_MaskLength", MaskLength / MaskScale);
         Shader.SetGlobalFloat("_MaskWidth", MaskWidth / MaskScale);
@@ -29,10 +31,13 @@ public class MapMaskController : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        var v1 = transform.position + new Vector3(-MaskWidth / 2 - FadeWidth * MaskScale, 0, -MaskLength / 2 - FadeWidth * MaskScale);
-        var v2 = transform.position + new Vector3(-MaskWidth / 2 - FadeWidth * MaskScale, 0, +MaskLength / 2 + FadeWidth * MaskScale);
-        var v3 = transform.position + new Vector3(+MaskWidth / 2 + FadeWidth * MaskScale, 0, +MaskLength / 2 + FadeWidth * MaskScale);
-        var v4 = transform.position + new Vector3(+MaskWidth / 2 + FadeWidth * MaskScale, 0, -MaskLength / 2 - FadeWidth * MaskScale);
+        Quaternion rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+        float fadeWidth = FadeWidth * MaskScale;
+
+        var v1 = transform.position + rotation * new Vector3(-MaskWidth / 2 - fadeWidth, 0, -MaskLength / 2 - fadeWidth);
+        var v2 = transform.position + rotation * new Vector3(-MaskWidth / 2 - fadeWidth, 0, +MaskLength / 2 + fadeWidth);
+        var v3 = transform.position + rotation * new Vector3(+MaskWidth / 2 + fadeWidth, 0, +MaskLength / 2 + fadeWidth);
+        var v4 = transform.position + rotation * new Vector3(+MaskWidth / 2 + fadeWidth, 0, -MaskLength / 2 - fadeWidth);
 
         Gizmos.DrawLine(v1, v2);
         Gizmos.DrawLine(v2, v3);
