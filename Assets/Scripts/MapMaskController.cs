@@ -7,6 +7,8 @@ public class MapMaskController : MonoBehaviour
     public float MaskWidth;
     public float MaskRadius;
     public float FadeWidth;
+    public float BorderWidth;
+    public Color BorderColor;
 
     private void Update()
     {
@@ -27,6 +29,8 @@ public class MapMaskController : MonoBehaviour
         Shader.SetGlobalFloat("_MaskWidth", MaskWidth / MaskScale);
         Shader.SetGlobalFloat("_MaskRadius", MaskRadius / MaskScale);
         Shader.SetGlobalFloat("_FadeWidth", FadeWidth);
+        Shader.SetGlobalFloat("_BorderWidth", BorderWidth);
+        Shader.SetGlobalColor("_BorderColor", BorderColor);
     }
 
     private void OnDrawGizmos()

@@ -322,6 +322,8 @@ MonoBehaviour:
   MaskWidth: 1.2
   MaskRadius: 0.1
   FadeWidth: 0.01
+  BorderWidth: 0.004
+  BorderColor: {r: 0, g: 0.78431374, b: 1, a: 0.19607843}
 --- !u!1001 &1178802930
 PrefabInstance:
   m_ObjectHideFlags: 0
