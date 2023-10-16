@@ -564,7 +564,7 @@ Transform:
   m_GameObject: {fileID: 831556195}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7, y: 0, z: 0.45}
+  m_LocalPosition: {x: 0, y: 0, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -584,12 +584,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_TargetTransform: {fileID: 1420194148528581793}
   m_SmoothFollowSpeed: 0
---- !u!20 &866457389 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 8237318441577652856, guid: eefa88d0248ee4cd09d15b6db0dcceb9,
-    type: 3}
-  m_PrefabInstance: {fileID: 7005252802448155797}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1039302349
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,7 +937,7 @@ Transform:
   m_GameObject: {fileID: 1252824074}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7, y: 1, z: -0.45}
+  m_LocalPosition: {x: 0, y: 1, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2247,16 +2241,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2959421691101867981, guid: 32c96dc5e19354db0b2ead8e4e616972,
-        type: 3}
-      propertyPath: _referenceCamera
-      value: 
-      objectReference: {fileID: 866457389}
-    - target: {fileID: 4009615410944947816, guid: 32c96dc5e19354db0b2ead8e4e616972,
-        type: 3}
-      propertyPath: m_Name
-      value: Offset
-      objectReference: {fileID: 0}
     - target: {fileID: 4419935262603608018, guid: 32c96dc5e19354db0b2ead8e4e616972,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2311,41 +2295,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Map
-      objectReference: {fileID: 0}
-    - target: {fileID: 7149296717260532975, guid: 32c96dc5e19354db0b2ead8e4e616972,
-        type: 3}
-      propertyPath: m_Name
-      value: GrabHandle
-      objectReference: {fileID: 0}
-    - target: {fileID: 7755938827576776844, guid: 32c96dc5e19354db0b2ead8e4e616972,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.20498547
-      objectReference: {fileID: 0}
-    - target: {fileID: 7755938827576776844, guid: 32c96dc5e19354db0b2ead8e4e616972,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.056325495
-      objectReference: {fileID: 0}
-    - target: {fileID: 7755938827576776844, guid: 32c96dc5e19354db0b2ead8e4e616972,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 0.053093553
-      objectReference: {fileID: 0}
-    - target: {fileID: 7755938827576776844, guid: 32c96dc5e19354db0b2ead8e4e616972,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0.5501577
-      objectReference: {fileID: 0}
-    - target: {fileID: 7755938827576776844, guid: 32c96dc5e19354db0b2ead8e4e616972,
-        type: 3}
-      propertyPath: m_Center.y
-      value: -0.000000029802322
-      objectReference: {fileID: 0}
-    - target: {fileID: 7755938827576776844, guid: 32c96dc5e19354db0b2ead8e4e616972,
-        type: 3}
-      propertyPath: m_Center.z
-      value: -0.37974596
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
