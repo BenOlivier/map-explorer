@@ -42,8 +42,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1210365979891335302}
   - component: {fileID: 2780347430607389598}
-  - component: {fileID: 2959421691101867981}
   - component: {fileID: 2742985286591080250}
+  - component: {fileID: 5087036978985591669}
   m_Layer: 0
   m_Name: Tiles
   m_TagString: Untagged
@@ -196,23 +196,6 @@ MonoBehaviour:
   _tileProvider: {fileID: 0}
   _previewOptions:
     isPreviewEnabled: 0
---- !u!114 &2959421691101867981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5920671379766195377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c699b8e1864b4b248acb7a04ede9480, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _panSpeed: 500
-  _zoomSpeed: 0.25
-  _referenceCamera: {fileID: 0}
-  _mapManager: {fileID: 2780347430607389598}
-  _useDegreeMethod: 0
 --- !u!114 &2742985286591080250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,4 +214,21 @@ MonoBehaviour:
   MaskRadius: 0.1
   FadeWidth: 0.01
   BorderWidth: 0.004
-  BorderColor: {r: 0.36320752, g: 0.86265254, b: 1, a: 0}
+  BorderColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &5087036978985591669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5920671379766195377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53bdf13d25e9c489c9aca3fb81027f9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _panSpeed: 500
+  _zoomSpeed: 0.25
+  _referenceCamera: {fileID: 0}
+  _mapManager: {fileID: 2780347430607389598}
+  _useDegreeMethod: 0
